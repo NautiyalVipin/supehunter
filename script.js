@@ -34,7 +34,7 @@ async function fetchData(search) {
     const str = (ts + KEY2 + KEY1).toString();
     const hash = CryptoJS.MD5(str).toString();
     let response = await fetch(
-      `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${search}&ts=${ts}&apikey=${KEY1}&hash=${hash}`
+      `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${search}&ts=${ts}&apikey=${KEY1}&hash=${hash}`
     );
     let data = await response.json();
     let btn = document.getElementById("close-search");
