@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- CRYPTO JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <title>Supehunter</title>
+  </head>
+  <body>
+    <!-- ------------------------------------  Navbar ----------------------------------------->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+            <!-------- Nav-Logo -------->
+          <a href="/"><h1 class="logo">SuperHero Hunter</h1></a>
+        </div>
+        <div class="menu-container">
+            <!------------ Nav-List ------------->
+          <ul class="menu-list">
+            <li class="menu-list-item active">
+              <a href="/"> Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="/favorites"> Favorites </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- --------------------------------------  Main  ------------------------------------>
+    <main class="container">
+      <div class="content-container">
+        <!-----------  Main-Header  -------------->
+        <div class="featured-content">
+          <p class="featured-desc">
+            Start hunting down the details of your favorite Superheroes!
+          </p>
+          <!-- Searchbar -->
+          <div class="featured-search">
+            <input
+              id="search"
+              type="search"
+              placeholder="Search Your SuperHero"
+            />
+          </div>
+          <button onclick="searchData('search')" class="featured-button">
+            Search
+          </button>
+        </div>
+        <!-- -------------------  Main-Body  ------------------->
+        <div class="movie-list-container">
+          <!-- Body-Header -->
+            <h1 class="movie-list-title">
+            SUPERHEROES
+            <span>
+              <button
+                onclick="closeSearch()"
+                id="close-search"
+                class="close-search-btn"
+              >
+                Close Search
+              </button></span
+            >
+          </h1>
+          <div class="movie-list-wrapper">
+            <!----------- Heroes-List -------------->
+            <div class="movie-list" id="heroList">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="" alt="" />
+                <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

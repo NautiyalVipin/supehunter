@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- CRYPTO JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <title>Supehunter-Details</title>
+  </head>
+
+  <body>
+     <!-- ------------------------------------  Navbar ----------------------------------------->
+     <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <!-------- Nav-Logo -------->
+                <a href="/">
+                    <h1 class="logo">SuperHero Hunter</h1>
+                </a>
+            </div>
+            <div class="menu-container">
+                <!------------ Nav-List ------------->
+                <ul class="menu-list">
+                    <li class="menu-list-item active">
+                        <a href="/"> Home</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="/favorites"> Favorites </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- --------------------------------------  Main-Body  ------------------------------------>
+    <main class="container">
+      <div class="playlist-content">
+        <div id="playlist" class="playlist">
+            <!---------------- Details of the Hero  ----------------->
+          <div id="info" class="playlist__artist">
+            <img src="" alt="" />
+            <div class="playlist__artist-info">
+              <h3>No Details Present</h3>
+              <p></p>
+              <div class="playlist__detail">
+                <!-- Movies -->
+                <div id="movies" class="playlist-movies">
+                  <h3 onclick='showList("movies-list")'>Movies</h3>
+                  <div id="movies-list" class="playlist-movies-list">
+                    <p>1</p>
+                    <p></p>
+                    <p>2</p>
+                    <p>3</p>
+                  </div>
+                </div>
+                <!-- Comics -->
+                <div id="comics" class="playlist-comics">
+                  <h3 onclick='showList("comics-list")'>Comics</h3>
+                  <div id="comics-list" class="playlist-comics-list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </div>
+                </div>
+                <!-- Series -->
+                <div id="series" class="playlist-series">
+                  <h3 onclick='showList("series-list")'>Series</h3>
+                  <div id="series-list" class="playlist-series-list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </div>
+                </div>
+                <!-- Events -->
+                <div id="events" class="playlist-events">
+                  <h3 onclick='showList("events-list")'>Events</h3>
+                  <div id="events-list" class="playlist-events-list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="superhero.js"></script>
+  </body>
+</html>
