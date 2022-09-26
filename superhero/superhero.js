@@ -51,15 +51,17 @@ function showList(id) {
 
 
 // Loads a page on clicking a Hero Detail list Item
-async function showLink(img) {
+async function showLink(url) {
   try {
+    url = url.replace("http","https")
+    console.log(url)
     const KEY2 = "c00ff171271ec4c0d8fee0082addf5e0236f3321";
     const KEY1 = "fba0e41d592e6e477ec723da6c2bb495";
     const ts = Date.now().toString();
     const str = (ts + KEY2 + KEY1).toString();
     const hash = CryptoJS.MD5(str).toString();
     let string = `?ts=${ts}&apikey=${KEY1}&hash=${hash}`;
-    let link = img + string;
+    let link = url + string;
     let response = await fetch(link);
     let data = await response.json();
   
