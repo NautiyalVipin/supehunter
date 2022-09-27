@@ -66,7 +66,7 @@ async function showLink(url) {
     let data = await response.json();
   
     localStorage.setItem("_herodetail", JSON.stringify(data.data.results[0])); //Loading detail to "_herodetail" key in localstorage
-    location.assign("/superhero/herodetail"); // Loading the herodetail page
+    location.assign("../superhero/herodetail"); // Loading the herodetail page
     
   } catch (error) {
     

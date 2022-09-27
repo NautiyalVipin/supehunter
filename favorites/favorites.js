@@ -36,7 +36,7 @@ function removeFromFav(id){
 function showDetails(id) {
   let hero = heroesList.find((hero) => hero.id === id);
   localStorage.setItem("_superhero", JSON.stringify(hero)); //Set "_superhero" key with hero details
-  location.assign("/superhero"); // Load the superhero page
+  location.assign("../superhero"); // Load the superhero page
 }
 
 
